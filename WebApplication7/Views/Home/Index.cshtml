@@ -1,0 +1,58 @@
+﻿@using ASP5.Models
+
+<style>
+
+    body {
+        background-color: cornflowerblue
+    }
+
+    form {
+        border-radius: 1em;
+        background-color: blue;
+        height: 450px;
+        width: 400px;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    input {
+        font-size: 32px;
+        background-color: #B9E4F0;
+        border-radius: 1em;
+    }
+
+    p {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 900
+    }
+
+</style>
+
+<form method="post">
+    <p>Fill in the form</p>
+    <div>
+        <label>Enter value <b>key</b></label>
+        <br />
+        <input type="text" name="key" />
+    </div>
+    <div>
+        <label>Enter a <b>value</b> to store</label>
+        <br />
+        <input type="text" name="value" />
+    </div>
+    <div>
+        <label>Enter an <b>expiration date</b> for Cookies</label>
+        <br />
+        <input type="datetime-local" name="date" />
+    </div>
+    <input type="submit" value="Save" style="background-color: #B9E4F0" />
+</form>
